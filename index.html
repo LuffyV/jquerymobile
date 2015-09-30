@@ -3,7 +3,9 @@
 	<meta charset="utf-8">
 	<title>Venta de Ropa</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/themes/a.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
@@ -15,20 +17,25 @@
 			<br>
 			<nav data-role="navbar" data-iconpos="left">
 				<ul>
-				<li><a href="#" data-icon="plus">Agregar artículo</a></li>
-				<li><a href="#" data-icon="user">Formulario Usuario</a></li>
+				<li><a href="venta.html" data-icon="plus">Vender</a></li>
 				<li><a href="compra.html" data-icon="shop">Comprar</a></li>
+				<li><a href="articuloscomprados.html" data-icon="bars">Art. Comprados</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div data-role="content">
 
+		<div role="main" class="ui-content">
+			<h3>Artículos populares</h3>
+		</div>
+
+		<div data-role="content">
 		<footer data-role="footer" data-position="fixed">
 			<!--Aquí ya hay collapsible-->
 			<div data-role="collapsible" data-collapsed-icon="phone" data-expanded-icon="phone">
   				<h3>Contacto</h3>
   				<p>Equipo: Abner Collí/Víctor Sosa.</p>
   				<p>Práctica 02. Móviles. Calif: 10/10.</p>
+  				<a href="formulario.html">Envíanos tu comentario!</a>
 			</div>
 		</footer>
 		</div>

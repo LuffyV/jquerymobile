@@ -3,11 +3,13 @@
 	<meta charset="utf-8">
 	<title>Formulario de Usuario</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
-	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css">
+	<link rel="stylesheet" type="text/css" href="css/themes/a.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<section>
+	<section data-role="page">
 		<header data-role="header" data-position="fixed" stlye="overflow:hidden;">
 			<h2>Venta de Ropa</h2>
 			<a href="index.html" data-icon="home" class="ui-btn-left">Home</a>
@@ -15,12 +17,36 @@
 			<br>
 			<nav data-role="navbar" data-iconpos="left">
 				<ul>
-				<li><a href="agregararticulo.html" data-icon="plus">Agregar artículo</a></li>
-				<li><a href="#" data-icon="user" class="ui-btn-active">Formulario Usuario</a></li>
-				<li><a href="compra.html" data-icon="shop">Comprar</a></li>
+				<li><a href="venta.html" data-icon="plus">Vender</a></li>
+				<li><a href="compra" data-icon="shop">Comprar</a></li>
+				<li><a href="articuloscomprados.html" data-icon="bars">Art. Comprados</a></li>
 				</ul>
 			</nav>
 		</header>
+
+		<div role="main" class="ui-content">
+			<h3>Aceptamos tus quejas o sugerencias</h3><br>
+			<!-- Aquí hay controlgroup -->
+			<fieldset data-role="controlgroup">
+  				<legend>Mi experiencia con esta página ha sido:</legend>
+  				<input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked">
+  				<label for="radio-choice-1">Excelente</label>
+ 
+  				<input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2">
+  				<label for="radio-choice-2">Satisfactoria</label>
+ 
+  				<input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3">
+  				<label for="radio-choice-3">Regular</label>
+ 
+  				<input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4">
+  				<label for="radio-choice-4">Mala</label>
+			</fieldset>
+
+			<h1>Correo:</h1> <input type="text">
+			<h1>Nombre:</h1> <input type="text">
+			<h1>Comentario:</h1> <input type="text">
+			<!-- Aquí lo del mail, nombre y comentario, que mande un popup cuando "lo envies"-->
+		</div>
 	</section>
 </body>
 </html>
