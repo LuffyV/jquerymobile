@@ -1,5 +1,14 @@
 <html>
 <head>
+    <style>
+        .images{
+            width:320px;
+            height: 300Spx;
+            border-radius: 10%;
+            margin-left: 15%;
+
+        }
+    </style>
 	<meta charset="utf-8">
 	<title>Elije tu Prenda</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
@@ -9,7 +18,7 @@
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<section data-role="page">
+	<section data-role="page" id="page">
 		<header data-role="header" data-position="fixed" stlye="overflow:hidden;">
 			<h2>Venta de Ropa</h2>
 			<a href="index.html" data-icon="home" class="ui-btn-left">Home</a>
@@ -18,12 +27,543 @@
 			<nav data-role="navbar" data-iconpos="left">
 				<ul>
 				<li><a href="venta.html" data-icon="plus">Vender</a></li>
-				<li><a href="#" data-icon="shop">Comprar</a></li>
+				<li><a href="compra.html" data-icon="shop">Comprar</a></li>
 				<li><a href="articuloscomprados.html" data-icon="bars">Art. Comprados</a></li>
 				</ul>
 			</nav>
+            <div data-role="content" >
+                <h3>Articulos Disponibles</h3>
+                <ul data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Buscando..."
+                    data-filter-reveal="false" data-input="#autocomplete">
+
+                    <li data-role="list-divider">Zapatos</li>
+                    <li>
+                        <ul data-insert="true" data-role="listview">
+                            <li>
+                                <a href="#compra1" rel="external"><img src="images/zapato1-1.jpg">Zapatos Dauchet Chucka
+
+                                    <p>Timberland</p>
+                                    <p><Strong> Precio:</Strong>699.00 MXN</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#compra2" rel="external"><img src="images/zapato2-1.jpg"> Zapato negro con agujeta
+
+                                    <p>LOB footwear</p>
+                                    <p><Strong> Precio:</Strong>899.00 MXN</p>
+
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li data-role="list-divider">Camisas</li>
+                    <li>
+                        <ul data-insert="true" data-role="listview">
+                            <li>
+                                <a href="#compra3" rel="external"><img src="images/camisa1-1.jpg">Camisa Mezclilla Manga Larga
+
+                                    <p>Jack & Jones</p>
+                                    <p><Strong> Precio:</Strong>499.00 MXN</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#compra4" rel="external"><img src="images/camisa2-1.jpg">Camisa Azul Marino Manga Corta
+                                    <p>DKNY</p>
+                                    <p><Strong> Precio:</Strong>439.00 MXN</p>
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li data-role="list-divider">Pantalones</li>
+                    <li>
+                        <ul data-insert="true" data-role="listview">
+                            <li>
+                                <a href="#compra5" rel="external"><img src="images/pantalon1.jpg">Pantalon Khaki en Gabardina Ligera con Detalle
+
+                                    <p>Grypho</p>
+                                    <p><Strong> Precio:</Strong>689.00 MXN</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#compra6" rel="external"><img src="images/pantalon1-1.jpg">Pantalon Casual Azul Marino
+                                    <p>LOB</p>
+                                    <p><Strong> Precio:</Strong>549.00 MXN</p>
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li data-role="list-divider">Short</li>
+                    <li>
+                        <ul data-insert="true" data-role="listview">
+                            <li>
+                                <a href="#compra7" rel="external"><img src="images/SHORT1.jpg">Bermuda Azul
+                                    <p>DKNY</p>
+                                    <p><Strong> Precio:</Strong>674.00 MXN</p>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#compra8" rel="external"><img src="images/SHORT2.jpg">
+                                    Short
+
+                                    <p> Pepe Jeans
+                                    </p>
+                                    <p><Strong> Precio:</Strong>499.00 MXN</p>
+
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
 		</header>
 	</section>
+    <section data-role="page" id="compra1">
+        <header data-role="header">
+            <h1>Zapatos Dauchet Chucka</h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+            <img class="images"src="images/zapato1-1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $699.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Tenis amarillo de media bota con superficie de ante, detalle texturizado y tobillo capitonado. Ajuste de cordones.
+            </p>
+            <p> <strong>Material exterior:</strong>
+                Piel
+            </p>
+            <p> <strong>Material interior:</strong>
+                Textil
+            </p>
+            <p> <strong>Material de suela:</strong>
+                Sintética
+            </p>
+            <p> <strong>Cierre:</strong>
+                Cordones
+            </p>
+
+            <form id="myform" action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="radio-32">
+                        <label for="radio-32">26</label>
+                        <input type="radio" name="radio-lang" id="radio-it" checked="checked">
+                        <label for="radio-it">27</label>
+                        <input type="radio" name="radio-lang" id="radio-gr">
+                        <label for="radio-gr">28</label>
+                        <input type="radio" name="radio-lang" id="radio-gs">
+                        <label for="radio-gs">29</label>
+                        <input type="radio" name="radio-lang" id="radio-ls">
+                        <label for="radio-ls">30</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section data-role="page" id="compra2">
+        <header data-role="header">
+            <h1>Zapato negro con agujeta
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/zapato2-1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $899.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Zapato negro con superficie lisa, pespuntes y cordones.
+            </p>
+            <p> <strong>Material exterior:</strong>
+                Piel
+            </p>
+            <p> <strong>Material interior:</strong>
+                Textil
+            </p>
+            <p> <strong>Material de suela:</strong>
+                Sintética antiderrapante
+            </p>
+            <p> <strong>Cierre:</strong>
+                Cordones
+            </p>
+            <form id="" action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="zapato-32">
+                        <label for="zapato-32">26</label>
+                        <input type="radio" name="radio-lang" id="zapa-it" checked="checked">
+                        <label for="zapa-it">27</label>
+                        <input type="radio" name="radio-lang" id="zapa-gr">
+                        <label for="zapa-gr">28</label>
+                        <input type="radio" name="radio-lang" id="zapa-gs">
+                        <label for="zapa-gs">29</label>
+                        <input type="radio" name="radio-lang" id="zapa-ls">
+                        <label for="zapa-ls">30</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra3">
+        <header data-role="header">
+            <h1>Zapato negro con agujeta
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/camisa1-3.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $499.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Camisa negra de mezclilla con cuello camisero manga larga y abotonadura al frente.
+            </p>
+
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="1">
+                        <label for="1">XS</label>
+                        <input type="radio" name="radio-lang" id="2" checked="checked">
+                        <label for="2">S</label>
+                        <input type="radio" name="radio-lang" id="3">
+                        <label for="3">M</label>
+                        <input type="radio" name="radio-lang" id="4">
+                        <label for="4">L</label>
+                        <input type="radio" name="radio-lang" id="5">
+                        <label for="5">XL</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra4">
+        <header data-role="header">
+            <h1>Camisa Azul Marino Manga Corta
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/camisa2-1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $439.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Camisa azul marino con mangas cortas; cuello camisero y abotonadura frontal. Bolsillo en delantero y trabillas en mangas.
+            </p>
+
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="6">
+                        <label for="6">XS</label>
+                        <input type="radio" name="radio-lang" id="7" checked="checked">
+                        <label for="7">S</label>
+                        <input type="radio" name="radio-lang" id="8">
+                        <label for="8">M</label>
+                        <input type="radio" name="radio-lang" id="9">
+                        <label for="9">L</label>
+                        <input type="radio" name="radio-lang" id="10">
+                        <label for="10">XL</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra5">
+        <header data-role="header">
+            <h1>Pantalon Khaki en Gabardina Ligera con Detalle
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/pantalon1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $689.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Pantalón Grypho. Pantalón beige con cortes decorativos en rodilla, bolsillos en costados y con solpada y botón en posterior. Pretina delgada y trabillas.
+            </p>
+            <p> <strong>Material:</strong>
+                Álgodon
+            </p>
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="p1">
+                        <label for="p1">XS</label>
+                        <input type="radio" name="radio-lang" id="p2" checked="checked">
+                        <label for="p2">S</label>
+                        <input type="radio" name="radio-lang" id="p3">
+                        <label for="p3">M</label>
+                        <input type="radio" name="radio-lang" id="p4">
+                        <label for="p4">L</label>
+                        <input type="radio" name="radio-lang" id="p5">
+                        <label for="p5">XL</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra6">
+        <header data-role="header">
+            <h1>Pantalon Casual Azul Marino
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/pantalon1-1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $549.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Pantalón LOB. Pantalón azul marino corte recto con bolsillos en costados y de ojal en posterior. Triple abotonadura e incluye cinturón.
+            </p>
+
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="p1">
+                        <label for="p1">XS</label>
+                        <input type="radio" name="radio-lang" id="p2" checked="checked">
+                        <label for="p2">S</label>
+                        <input type="radio" name="radio-lang" id="p3">
+                        <label for="p3">M</label>
+                        <input type="radio" name="radio-lang" id="p4">
+                        <label for="p4">L</label>
+                        <input type="radio" name="radio-lang" id="p5">
+                        <label for="p5">XL</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra7">
+        <header data-role="header">
+            <h1>Bermuda Azul
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/SHORT1.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $674.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Bermuda DKNY. Bermuda azul marino con bolsillos en costados y  de ojal en posterior. Pretina delgada y trabillas.
+            </p>
+            <P><STRONG>Material:</STRONG>
+                Algodón y elastano
+            </P>
+
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="p1">
+                        <label for="p1">28</label>
+                        <input type="radio" name="radio-lang" id="p2" checked="checked">
+                        <label for="p2">30</label>
+                        <input type="radio" name="radio-lang" id="p3">
+                        <label for="p3">32</label>
+                        <input type="radio" name="radio-lang" id="p4">
+                        <label for="p4">34</label>
+                        <input type="radio" name="radio-lang" id="p5">
+                        <label for="p5">36</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+    <section data-role="page" id="compra8">
+        <header data-role="header">
+            <h1>
+                Short Azul
+            </h1>
+            <a href="compra.html" data-icon="delete" class="ui-btn-right">Cerrar</a>
+
+        </header>
+        <div class="content" data-role="content">
+            <p>
+                <img class="images"src="images/SHORT2.jpg" alt=""/>
+
+            </p>
+            <p> <strong>Precio:</strong>
+                $499.00 MXN
+            </p>
+            <p> <strong>Descripción:</strong>
+                Shorts Pepe Jeans. Shorts morado corte skinny con estampado floral, bolsillos en posterior y en costados. Pespuntes contrastantes decorativos.
+            </p>
+            <P><STRONG>Material:</STRONG>
+                 Algodón
+            </P>
+
+            <form  action="" method="post">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                        <legend>
+                            Selecciona tu talla:
+                        </legend>
+                        <input type="radio" name="radio-lang" id="p1">
+                        <label for="p1">28</label>
+                        <input type="radio" name="radio-lang" id="p2" checked="checked">
+                        <label for="p2">30</label>
+                        <input type="radio" name="radio-lang" id="p3">
+                        <label for="p3">32</label>
+                        <input type="radio" name="radio-lang" id="p4">
+                        <label for="p4">34</label>
+                        <input type="radio" name="radio-lang" id="p5">
+                        <label for="p5">36</label>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <legend>Piezas:</legend>
+                    <input type="range" id="slider" name="slider" min="1" max="20" step="1" data-highlight="true">
+                </div>
+                <div data-role="button">
+                    <button href="compra.html">
+                        Comprar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+    </section>
+
 
 </body>
 </html>
