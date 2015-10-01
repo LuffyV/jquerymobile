@@ -7,9 +7,31 @@
 	<link rel="stylesheet" type="text/css" href="css/themes/a.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+        img{
+            width:80px;
+            height:100px;
+            border:10px;
+        }
+        .list-images  li{
+            display: inline;
+        }
+        .list-images img{
+            width:200px;
+            height:180px;
+            border-radius: 10%;
+            border-image: 50;
+            border-color: #1616ab;
+            align:center;
+        }
+        .title-articulo{
+           margin-left: 25%;
+        }
+    </style>
 </head>
 <body>
-	<section data-role="page">
+
+	<section data-role="page" id="page">
 		<header data-role="header" data-position="fixed" stlye="overflow:hidden;">
 			<h2>Venta de Ropa</h2>
 			<a href="index.html" data-icon="home" class="ui-btn-left">Home</a>
@@ -19,11 +41,204 @@
 				<ul>
 				<li><a href="venta.html" data-icon="plus">Vender</a></li>
 				<li><a href="compra.html" data-icon="shop">Comprar</a></li>
-				<li><a href="#" data-icon="bars">Art. Comprados</a></li>
+				<li><a href="articuloscomprados.html" data-icon="bars">Art. Comprados</a></li>
 				</ul>
 			</nav>
 		</header>
+        <div data-role="content" >
+            <h3>Mis Articulos Comprados</h3>
+            <ul data-role="listview" data-insert="true" data-filter="true" data-filter-placeholder="Buscando..."
+                data-filter-reveal="false" data-input="#autocomplete">
+
+                <li data-role="list-divider">Zapatos</li>
+                <li>
+                    <ul data-insert="true" data-role="listview">
+                        <li>
+                            <a href="#page1"><img src="images/zapato1-1.jpg">Zapatos Dauchet Chucka
+
+                                <p>Timberland</p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#page2"><img src="images/zapato2-1.jpg"> Zapato negro con agujeta
+
+                                <p>LOB footwear</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li data-role="list-divider">Camisas</li>
+                <li>
+                    <ul data-insert="true" data-role="listview">
+                        <li>
+                            <a href="#page3"><img src="images/camisa1-1.jpg">Camisa Mezclilla Manga Larga
+
+                                <p>Jack & Jones</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4"><img src="images/camisa2-1.jpg">Camisa Azul Marino Manga Corta
+                                <p>DKNY</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page5"><img src="images/camisa3-1.jpg">Playera Manga Larga
+                                <p>Van Roy</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
 	</section>
+    <!--Página 2-->
+    <section data-role="page" id="page1">
+            <header data-role="header" data-position="fixed" data-theme="A">
+                <h2>Zapato Dauchet</h2>
+            </header>
+
+        <ul class="list-images">
+            <li><img src="images/zapato1-1.jpg" alt=""/></li>
+            <li><img src="images/zapato1-2.jpg" alt=""/></li>
+            <li>
+                <center><img src="images/zapato1-3.jpg" alt=""/></center></li>
+        </ul>
+        <div data-role="content"><h3>Tenis Dauset Chukka Timberland.</h3>
+            <p>
+                <strong>Precio:</strong> 699.00 MXN
+            </p>
+            <p>
+                <strong>Descripcion:</strong>Tenis amarillo de media bota con superficie de ante, detalle texturizado y tobillo capitonado. Ajuste de cordones.
+            </p>
+            <p>  <strong>Material exterior:</strong>   Piel
+            </p>
+            <p> <strong>Material interior:</strong>Textil
+            </p>
+            <p> <strong>Material de suela:</strong>
+                 Sintética
+
+            </p>
+            <p>
+                <STRONG>Cierre:</STRONG> Cordones
+            </p>
+
+            <p><a href="#page" data-icon="delete" data-role="button" data-transition="slide">Cerrar</a></p>
+        </div>
+    </section>
+    <section data-role="page" id="page2">
+        <header data-role="header" data-position="fixed" data-theme="">
+            <h2>Zapato negro LOB FootWear</h2>
+        </header>
+        <ul class="list-images">
+            <li><img src="images/zapato2-1.jpg" alt=""/></li>
+            <li><img src="images/zapato2-2.jpg" alt=""/></li>
+            <li>
+                <center><img src="images/zapato2-3.jpg" alt=""/></center>
+            </li>
+        </ul>
+        <div data-role="content">Zapato LOB
+            <p>
+                <strong>Precio:</strong> 899.00 MXN
+            </p>
+            <p>
+                <strong>Descripcion:</strong>Zapato negro con superficie lisa, pespuntes y cordones.
+            </p>
+            <p>  <strong>Material exterior:</strong>   Piel
+            </p>
+            <p> <strong>Material interior:</strong>Textil
+            </p>
+            <p> <strong>Material de suela:</strong>
+                Sintética antiderrapante
+
+            </p>
+            <p>
+                <STRONG>Cierre:</STRONG> Cordones
+            </p>
+            <p><a href="#page" data-icon="delete" data-role="button" data-transition="slide">Cerrar</a></p>
+
+    </section>
+    <section data-role="page" id="page3">
+        <header data-role="header" data-position="fixed" data-theme="A">
+            <h2>Camisa Mezclilla Manga Larga</h2>
+        </header>
+        <ul class="list-images">
+            <li><img src="images/camisa1-1.jpg" alt=""/></li>
+            <li><img src="images/camisa1-2.jpg" alt=""/></li>
+            <li>
+                <center><img src="images/camisa1-3.jpg" alt=""/></center>
+            </li>
+
+        </ul>
+        <div data-role="content">Camisa Jack & Jones.
+            <p>
+                <strong>Precio:</strong> 499.00 MXN
+            </p>
+            <p>
+                <strong>Descripcion:</strong> Camisa negra de mezclilla con cuello camisero manga larga y
+
+                abotonadura al frente.
+            </p>
+            <p><a href="#page" data-icon="delete" data-role="button" data-transition="slide">Cerrar</a></p>
+
+        </div>
+    </section>
+    <section data-role="page" id="page4">
+        <header data-role="header" data-position="fixed" data-theme="A">
+            <h2>Camisa Azul Marino Manga Corta</h2>
+        </header>
+
+
+        <ul class="list-images">
+            <li><img src="images/camisa2-1.jpg" alt=""/></li>
+            <li><img src="images/camisa2-2.jpg" alt=""/></li>
+            <li>
+                <center><img src="images/camisa2-3.jpg" alt=""/></center>
+            </li>
+        </ul>
+        <div data-role="content"> Camisa DKNY.
+            <p>
+                <strong>Precio:</strong> 439.00 MXN
+            </p>
+            <p>
+                <strong>Descripcion:</strong> Camisa azul marino con mangas cortas; cuello camisero y abotonadura frontal.
+                Bolsillo en delantero y trabillas en mangas.
+            </p>
+            <p><a href="#page" data-icon="delete" data-role="button" data-transition="slide">Cerrar</a></p>
+
+        </div>
+    </section>
+    <section data-role="page" id="page5">
+        <header data-role="header" data-position="fixed" data-theme="A">
+            <h3>Playera Manga Larga</h3>
+        </header>
+        <ul class="list-images">
+            <li><img src="images/camisa3-1.jpg" alt=""/></li>
+            <li><img src="images/camisa3-2.jpg" alt=""/></li>
+            <li>
+                <center><img src="images/camisa3-3.jpg" alt=""/></center>
+            </li>
+
+        </ul>
+        <div data-role="content"> Playera Van Roy.
+            <p>
+                <strong>Precio:</strong> 299.00 MXN
+            </p>
+            <p>
+                <strong>Descripcion:</strong>  Playera gris tipo polo con bolsillos en contraste, pespuntes decorativos
+                y botón. Manga larga.
+            </p>
+            <p>
+                <strong>Material:</strong> Algodón
+            </p>
+
+            <p><a href="#page" data-icon="delete" data-role="button" data-transition="slide">Cerrar</a></p>
+
+        </div>
+    </section>
 
 </body>
 </html>
